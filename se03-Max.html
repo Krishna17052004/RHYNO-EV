@@ -7,23 +7,64 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            color: #EDEDED;
+            background-color: #131313;
+            margin: 0;
+            padding: 20px;
         }
+
+        h1, h2 {
+            color: #FFF225;
+            text-align: center;
+        }
+
+        p, ul {
+            color: #EDEDED;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "• ";
+            color: #FFF225;
+        }
+
         table {
-            width: 100%;
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #EDEDED;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            background-color: #252525;
+            color: #EDEDED;
         }
+
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+            border: 1px solid #EDEDED;
+            padding: 10px;
             text-align: left;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #2C2A2A;
+            color: #FFF225;
         }
-        h2 {
-            color: #333;
+
+        td {
+            background-color: #2C2A2A;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #333333;
+        }
+
+        body, h1, h2, p, table, th, td {
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
